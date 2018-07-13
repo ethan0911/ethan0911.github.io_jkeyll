@@ -124,6 +124,29 @@
 			"abstract": "Understandingatmosphericphenomenainvolvesanalysisoflarge-scalespatiotemporal multivariate data. The complexity and heterogeneity of such data pose a significant challenge in discovering and understanding the association between multiple climate variables. To tackle this challenge, we present an interactive heuristic visualization system that supports climate scientists and the public in their exploration and analysis of atmospheric phenomena of interest. Three techniques are introduced: (1) web-based spatiotemporal climate data visualization; (2) multiview and multivariate scientific data analysis; and (3) data mining-enabled visual analytics. The Arctic System Reanalysis (ASR) data are used to demonstrate and validate the effectiveness and usefulness of our method through a case study of “The Great Arctic Cyclone of 2012”. The results show that different variables have strong associations near the polar cyclone area. This work also provides techniques for identifying multivariate correlation and for better understanding the driving factors of climate phenomena."
 	},
 	{
+		"title": "Web-Scale Multidimensional Visualization of Big Spatial Data to Support Earth Sciences—A Case Study with Visualizing Climate Simulation Data",
+		"authors": "Sizhe Wang and Wenwen Li and Feng Wang",
+		"venue": "Informatics",
+		"paper_pdf": "asstets/papers/WSMV.pdf",
+		"thumb": "asstets/papers/thumb/tWSMV.png",
+		"short_title": "WSMV",
+		"doi": "10.3390/informatics4030017",
+		"year": 2017,
+		"bibtex": "@article{Wang_2017,\n
+			doi = {10.3390/informatics4030017},\n
+			url = {https://doi.org/10.3390%2Finformatics4030017},\n
+			year = 2017,\n
+			month = {jun},\n
+			publisher = {{MDPI} {AG}},\n
+			volume = {4},\n
+			number = {3},\n
+			pages = {17},\n
+			author = {Sizhe Wang and Wenwen Li and Feng Wang},\n
+			title = {Web-Scale Multidimensional Visualization of Big Spatial Data to Support Earth Sciences{\textemdash}A Case Study with Visualizing Climate Simulation Data},\n
+			journal = {Informatics},\n}",
+			"abstract": "The world is undergoing rapid changes in its climate, environment, and ecosystems due to increasing population growth, urbanization, and industrialization. Numerical simulation is becoming an important vehicle to enhance the understanding of these changes and their impacts, with regional and global simulation models producing vast amounts of data. Comprehending these multidimensional data and fostering collaborative scientific discovery requires the development of new visualization techniques. In this paper, we present a cyberinfrastructure solution—PolarGlobe—that enables comprehensive analysis and collaboration. PolarGlobe is implemented upon an emerging web graphics library, WebGL, and an open source virtual globe system Cesium, which has the ability to map spatial data onto a virtual Earth. We have also integrated volume rendering techniques, value and spatial filters, and vertical profile visualization to improve rendered images and support a comprehensive exploration of multi-dimensional spatial data. In this study, the climate simulation dataset produced by the extended polar version of the well-known Weather Research and Forecasting Model (WRF) is used to test the proposed techniques. PolarGlobe is also easily extendable to enable data visualization for other Earth Science domains, such as oceanography, weather, or geology."
+	},
+	{
 		"title": "Polar Cyclone Identification from 4D Climate Data in a Knowledge-Driven Visualization System",
 		"authors": "Feng Wang, Wenwen Li and Sizhe Wang",
 		"venue": "climate",
@@ -144,32 +167,7 @@
 			author = {Feng Wang and Wenwen Li and Sizhe Wang},\n
 			title = {Polar Cyclone Identification from 4D Climate Data in a Knowledge-Driven Visualization System},\n
 			journal = {Climate},\n}",
-		"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
-	},
-	{
-		"title": "Progressive CPU Volume Rendering with Sample Accumulation",
-		"authors": "Will Usher, Jefferson Amstutz, Carson Brownlee, Aaron Knoll, Ingo Wald",
-		"venue": "Eurographics Symposium on Parallel Graphics and Visualization",
-		"paper_pdf": "http://sci.utah.edu/~will/papers/savr/savr.pdf",
-		"teaser": "https://i.imgur.com/15y1f8I.png",
-		"thumb": "https://i.imgur.com/tdxjYs3.png",
-		"short_title": "savr",
-		"doi": "10.2312/pgv.20171090",
-		"gh_user": "ospray",
-		"gh_repo": "module_savr",
-		"year": 2017,
-		"bibtex": "@inproceedings{Usher_SAVR_2017,\n
-			booktitle={Eurographics Symposium on Parallel Graphics and Visualization},\n
-			editor={Alexandru Telea and Janine Bennett},\n
-			title={{Progressive CPU Volume Rendering with Sample Accumulation}},\n
-			author={Usher, Will and Amstutz, Jefferson and Brownlee, Carson and Knoll, Aaron and Wald, Ingo},\n
-			year={2017},\n
-			publisher={The Eurographics Association},\n
-			issn={1727-348X},\n
-			isbn={978-3-03868-034-5},\n
-			doi={10.2312/pgv.20171090},\n}",
-		"abstract": "We present a new method for progressive volume rendering by accumulating object-space samples over successively rendered frames. Existing methods for progressive refinement either use image space methods or average pixels over frames, which can blur features or integrate incorrectly with respect to depth. Our approach stores samples along each ray, accumulates new samples each frame into a buffer, and progressively interleaves and integrates these samples. Though this process requires additional memory, it ensures interactivity and is well suited for CPU architectures with large memory and cache. This approach also extends well to distributed rendering in cluster environments. We implement this technique in Intel’s open source OSPRay CPU ray tracing framework and demonstrate that it is particularly useful for rendering volumetric data with costly sampling functions.",
-		"teaser_caption": "(a-c) Progressive refinement with Sample-Accumulation Volume Rendering (SAVR) on the 40GB Landing Gear AMR dataset using a prototype AMR sampler. The SAVR algorithm correctly accumulates frames to progressively refine the image. After 16 frames of accumulation the volume is sampled at the Nyquist limit, with some small noise, by 32 frames the noise has been removed. SAVR extends to distributed data, in (d) we show the 1TB DNS dataset, a 10240×7680×1536 uniform grid, rendered interactively across 64 second-generation Intel Xeon Phi \"Knights Landing\" (KNL) processor nodes on Stampede 1.5 at a 6144×1024 resolution. While interacting, our method achieves around 5.73 FPS."
+			"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
 	},
 	{
 		"title": "In Situ Exploration of Particle Simulations with CPU Ray Tracing",
@@ -218,28 +216,5 @@
 			month={May},\n}",
 		"abstract": "One of the most critical challenges for high-performance computing (HPC) scientific visualization is execution on massively threaded processors. Of the many fundamental changes we are seeing in HPC systems, one of the most profound is a reliance on new processor types optimized for execution bandwidth over latency hiding. Our current production scientific visualization software is not designed for these new types of architectures. To address this issue, the VTK-m framework serves as a container for algorithms, provides flexible data representation, and simplifies the design of visualization algorithms on new and future computer architecture."
 	},
-	{
-		"title": "CPU Ray Tracing Large Particle Data with Balanced P-k-d Trees",
-		"authors": "Ingo Wald, Aaron Knoll, Gregory P. Johnson, Will Usher, Valerio Pasucci, Michael E. Papka",
-		"venue": "IEEE Vis (conference)",
-		"paper_pdf": "http://sci.utah.edu/~will/papers/pkd/pkd_tree.pdf",
-		"doi": "10.1109/SciVis.2015.7429492",
-		"teaser": "https://i.imgur.com/1YNpRJ1.png",
-		"thumb": "https://i.imgur.com/qpTN5kR.png",
-		"gh_user": "ingowald",
-		"gh_repo": "ospray-module-pkd",
-		"short_title": "pkd",
-		"year": 2015,
-		"bibtex": "@inproceedings{Wald_PKD_2015,\n
-			author={I. Wald and A. Knoll and G. P. Johnson and W. Usher and V. Pascucci and M. E. Papka},\n
-			booktitle={2015 IEEE Scientific Visualization Conference (SciVis)},\n
-			title={{CPU} ray tracing large particle data with balanced {P-k-d} trees},\n
-			year={2015},\n
-			pages={57-64},\n
-			doi={10.1109/SciVis.2015.7429492},\n
-			month={Oct},\n}",
-		"abstract": "We present a novel approach to rendering large particle data sets from molecular dynamics, astrophysics and other sources. We employ a new data structure adapted from the original balanced k-d tree, which allows for representation of data with trivial or no overhead. In the OSPRay visualization framework, we have developed an efficient CPU algorithm for traversing, classifying and ray tracing these data. Our approach is able to render up to billions of particles on a typical workstation, purely on the CPU, without any approximations or level-of-detail techniques, and optionally with attribute-based color mapping, dynamic range query, and advanced lighting models such as ambient occlusion and path tracing.",
-		"teaser_caption": "Full-detail ray tracing of giga-particle data sets. From left to right: CosmicWeb early universe data set from a P3D simulation with 29 billion particles; a 100 million atom molecular dynamics Al<sub>2</sub>O<sub>3</sub>−SiC materials fracture simulation; and a 1.3 billion particle Uintah MPM detonation simulation. Using a quad-socket, 72-core 2.5GHz Intel Xeon E7-8890 v3 Processor with 3TB RAM and path-tracing with progressive refinement at 1 sample per pixel, these far and close images (above and below) are rendered at 1.6 (far) / 1.0 (close) FPS (left), 2.0 / 1.2 FPS (center), and 1.0 / 0.9 FPS (right), respectively, at 4K (3840×2160) resolution. All examples use our balanced P-k-d tree, an acceleration structure which requires little or no memory cost beyond the original data."
-	}
 ]
 
