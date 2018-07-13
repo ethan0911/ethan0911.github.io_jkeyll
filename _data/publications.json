@@ -125,7 +125,7 @@
 	},
 	{
 		"title": "Web-Scale Multidimensional Visualization of Big Spatial Data to Support Earth Sciences—A Case Study with Visualizing Climate Simulation Data",
-		"authors": "Sizhe Wang and Wenwen Li and Feng Wang",
+		"authors": "Sizhe Wang, Wenwen Li and Feng Wang",
 		"venue": "Informatics",
 		"paper_pdf": "assets/papers/WSMV.pdf",
 		"thumb": "assets/papers/thumb/tWSMV.png",
@@ -170,51 +170,26 @@
 			"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
 	},
 	{
-		"title": "In Situ Exploration of Particle Simulations with CPU Ray Tracing",
-		"authors": "Will Usher, Ingo Wald, Aaron Knoll, Michael Papka, Valerio Pascucci",
-		"venue": "Supercomputing Frontiers and Innovations",
-		"paper_pdf": "http://sci.utah.edu/~will/papers/in_situ_particles/in_situ_particles.pdf",
-		"teaser": "https://i.imgur.com/DO3JqOb.png",
-		"thumb": "https://i.imgur.com/gieTAy3.png",
-		"short_title": "isp-jsfi",
-		"doi": "10.14529/jsfi160401",
-		"gh_user": "Twinklebear",
-		"gh_repo": "in-situ-particles",
-		"year": 2016,
-		"bibtex": "@article{Usher_InSituParticles_2016,\n
-			author={Will Usher and Ingo Wald and Aaron Knoll and Michael Papka and Valerio Pascucci},\n
-			title={In {Situ} {Exploration} of {Particle} {Simulations} with {CPU} {Ray} {Tracing}},\n
-			journal={Supercomputing Frontiers and Innovations},\n
-			volume={3},\n
-			number={4},\n
-			year={2016},\n
-			issn={2313-8734},\n
-			doi={10.14529/jsfi160401},\n}",
-		"abstract": "We present a system for interactive in situ visualization of large particle simulations, suitable for general CPU-based HPC architectures. As simulations grow in scale, in situ methods are needed to alleviate IO bottlenecks and visualize data at full spatio-temporal resolution. We use a lightweight loosely-coupled layer serving distributed data from the simulation to a data-parallel renderer running in separate processes. Leveraging the OSPRay ray tracing framework for visualization and balanced P-k-d trees, we can render simulation data in real-time, as they arrive, with negligible memory overhead. This flexible solution allows users to perform exploratory in situ visualization on the same computational resources as the simulation code, on dedicated visualization clusters or remote workstations, via a standalone rendering client that can be connected or disconnected as needed. We evaluate this system on simulations with up to 227M particles in the LAMMPS and Uintah computational frameworks, and show that our approach provides many of the advantages of tightly-coupled systems, with the flexibility to render on a wide variety of remote and co-processing resources.",
-		"teaser_caption": "A coal particle combustion simulation in Uintah at three different timesteps with (left to right): 34.61M, 48.46M and 55.39M particles, with attribute based culling showing the full jet (top) and the front in detail (bottom). Using our in situ library to query and send data to our rendering client in OSPRay these images are rendered interactively with ambient occlusion, averaging around 13 FPS at 1920×1080. The renderer is run on 12 nodes of the Stampede supercomputer and pulls data from a Uintah simulation running on 64 processes (4 nodes). Our loosely-coupled in situ approach allows for live exploration at the full temporal fidelity of the simulation, without prohibitive IO cost."
-	},
-	{
-		"title": "VTK-m: Accelerating the Visualization Toolkit for Massively Threaded Architectures",
-		"authors": "Kenneth Moreland, Christopher Sewell, William Usher, Li-ta Lo, Jeremy Meredith,
-				David Pugmire, James Kress, Hendrik Schroots, Kwan-Liu Ma, Hank Childs, Matthew Larsen,
-				Chun-Ming Chen, Robert Maynard, Berk Geveci",
-		"venue": "IEEE Computer Graphics and Applications",
-		"paper_pdf": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7466740",
-		"doi": "10.1109/MCG.2016.48",
-		"year": 2016,
-		"short_title": "vtkm",
-		"bibtex": "@article{Moreland_VTKm_2016,\n
-			author={K. Moreland and C. Sewell and W. Usher and L. t. Lo and J. Meredith and D. Pugmire and J. Kress and H. Schroots and K. L. Ma and H. Childs and M. Larsen and C. M. Chen and R. Maynard and B. Geveci},\n
-			journal={IEEE Computer Graphics and Applications},\n
-			title={{VTK-m}: {Accelerating} the {Visualization} {Toolkit} for {Massively} {Threaded} {Architectures}},\n
-			year={2016},\n
-			volume={36},\n
-			number={3},\n
-			pages={48-58},\n
-			doi={10.1109/MCG.2016.48},\n
-			ISSN={0272-1716},\n
-			month={May},\n}",
-		"abstract": "One of the most critical challenges for high-performance computing (HPC) scientific visualization is execution on massively threaded processors. Of the many fundamental changes we are seeing in HPC systems, one of the most profound is a reliance on new processor types optimized for execution bandwidth over latency hiding. Our current production scientific visualization software is not designed for these new types of architectures. To address this issue, the VTK-m framework serves as a container for algorithms, provides flexible data representation, and simplifies the design of visualization algorithms on new and future computer architecture."
-	},
+		"title": "A parallel algorithm for viewshed analysis in three-dimensional Digital Earth",
+		"authors": "Feng Wang, Gang Wang, Deji Pan, Yuan Liu, Liuzhong Yang, Hongbo Wang",
+		"venue": "Computers & Geosciences",
+		"paper_pdf": "assets/papers/viewshedAnalysis.pdf",
+		"thumb": "assets/papers/thumb/tVSA.png",
+		"short_title": "vsa",
+		"doi": "10.1016/j.cageo.2014.10.012,
+		"year": 2015,
+		"bibtex": "@article{Feng_2015,\n
+			doi = {10.1016/j.cageo.2014.10.012},\n
+			url = {https://doi.org/10.1016%2Fj.cageo.2014.10.012},\n
+			year = 2015,\n
+			month = {feb},\n
+			publisher = {Elsevier {BV}},\n
+			volume = {75},\n
+			pages = {57--65},\n
+			author = {Wang Feng and Wang Gang and Pan Deji and Liu Yuan and Yang Liuzhong and Wang Hongbo},\n
+			title = {A parallel algorithm for viewshed analysis in three-dimensional Digital Earth},\n
+			journal = {Computers {\&} Geosciences}\n}",
+		"abstract": "Viewshed analysis, often supported by geographic information systems, is widely used in the three- dimensional (3D) Digital Earth system. Many of the analyzes involve the siting of features and real- timedecision-making. Viewshed analysis is usually performed at a large scale, which poses substantial computational challenges, as geographic datasets continue to become increasingly large. Previous re- search on viewshed analysis has been generally limited to a single data structure (i.e., DEM), which cannot be used to analyze viewsheds in complicated scenes. In this paper, a real-time algorithm for viewshed analysis in Digital Earth is presented using the parallel computing of graphics processing units (GPUs). An occlusion for each geometric entity in the neighbor space of the viewshed point is generated according to line-of-sight. The region within the occlusion is marked by a stencil buffer within the programmable 3D visualization pipeline. The marked region is drawn with red color concurrently. In contrast to traditional algorithms based on line-of-sight, the new algorithm, in which the viewshed calculation is integrated with the rendering module, is more efficient and stable. This proposed method of viewshed generation is closer to the reality of the virtual geographic environment. No DEM inter- polation, which is seen as a computational burden, is needed. The algorithm was implemented in a 3D Digital Earth system (GeoBeans3D) with the DirectX application programming interface (API) and has been widely used in a range of applications."
+	}
 ]
 
