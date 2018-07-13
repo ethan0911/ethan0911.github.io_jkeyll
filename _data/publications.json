@@ -124,50 +124,27 @@
 			"abstract": "Understandingatmosphericphenomenainvolvesanalysisoflarge-scalespatiotemporal multivariate data. The complexity and heterogeneity of such data pose a significant challenge in discovering and understanding the association between multiple climate variables. To tackle this challenge, we present an interactive heuristic visualization system that supports climate scientists and the public in their exploration and analysis of atmospheric phenomena of interest. Three techniques are introduced: (1) web-based spatiotemporal climate data visualization; (2) multiview and multivariate scientific data analysis; and (3) data mining-enabled visual analytics. The Arctic System Reanalysis (ASR) data are used to demonstrate and validate the effectiveness and usefulness of our method through a case study of “The Great Arctic Cyclone of 2012”. The results show that different variables have strong associations near the polar cyclone area. This work also provides techniques for identifying multivariate correlation and for better understanding the driving factors of climate phenomena."
 	},
 	{
-		"title": "CPU Volume Rendering of Adaptive Mesh Refinement Data",
-		"authors": "Ingo Wald, Carson Brownlee, Will Usher, Aaron Knoll",
-		"venue": "SIGGRAPH Asia 2017 Symposium on Visualization",
-		"paper_pdf": "http://sci.utah.edu/~will/papers/cvamr/cvamr.pdf",
-		"teaser": "https://i.imgur.com/CqZc3VJ.png",
-		"thumb": "https://i.imgur.com/JFShB4G.png",
-		"year": 2017,
-		"short_title": "cvamr",
-		"doi": "10.1145/3139295.3139305",
-		"bibtex": "@inproceedings{Wald_CVAMR_2017,\n
-			author = {Wald, Ingo and Brownlee, Carson and Usher, Will and Knoll, Aaron},\n
-			title = {CPU Volume Rendering of Adaptive Mesh Refinement Data},\n
-			booktitle = {SIGGRAPH Asia 2017 Symposium on Visualization},\n
-			series = {SA '17},\n
-			year = {2017},\n
-			isbn = {978-1-4503-5411-0},\n
-			location = {Bangkok, Thailand},\n
-			pages = {9:1--9:8},\n
-			articleno = {9},\n
-			numpages = {8},\n
-			url = {http://doi.acm.org/10.1145/3139295.3139305},\n
-			doi = {10.1145/3139295.3139305},\n
-			acmid = {3139305},\n
-			publisher = {ACM},\n
-			address = {New York, NY, USA},\n
-		}",
-		"abstract": "Adaptive Mesh Refinement (AMR) methods are widespread
-		in scientific computing, and visualizing the resulting data with
-		efficient and accurate rendering methods can be vital for enabling 
-		interactive data exploration.
-		In this work, we
-		detail a comprehensive solution for directly volume rendering block-structured 
-		(Berger-Colella) AMR data in the
-		OSPRay interactive CPU ray tracing framework. In particular, we
-		contribute a general method for representing and traversing AMR data
-		using a kd-tree structure, and four different reconstruction
-		options, one of which in particular (the basis function approach)
-		is novel compared to existing methods. We demonstrate our system on two
-		types of block-structured AMR data and compressed scalar
-		field data, and show how it can be easily used in existing production-ready
-		applications through a prototypical integration in the widely used visualization program ParaView.",
-		"teaser_caption": "Two examples of our method (integrated within the OSPRay ray tracer):
-		Left: 1.8GB Cosmos AMR data, rendered in ParaView. Right: a 57GB NASA Chombo simulation,
-		rendered with ambient occlusion and shadows alongside mesh geometry."
+		"title": "Polar Cyclone Identification from 4D Climate Data in a Knowledge-Driven Visualization System",
+		"authors": "Feng Wang, Wenwen Li and Sizhe Wang",
+		"venue": "climate",
+		"paper_pdf": "assets/papers/PolarCyclone.pdf",
+		"thumb": "assets/papers/thumb/tPolarCyclone.png",
+		"year": 2016,
+		"short_title": "polarCyclone",
+		"doi": "10.3390/cli4030043",
+		"bibtex": "@article{Wang_2016,\n
+			doi = {10.3390/cli4030043},\n
+			url = {https://doi.org/10.3390%2Fcli4030043},\n
+			year = 2016,\n
+			month = {sep},\n
+			publisher = {{MDPI} {AG}},\n
+			volume = {4},\n
+			number = {3},\n
+			pages = {43},\n
+			author = {Feng Wang and Wenwen Li and Sizhe Wang},\n
+			title = {Polar Cyclone Identification from 4D Climate Data in a Knowledge-Driven Visualization System},\n
+			journal = {Climate},\n}",
+		"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
 	},
 	{
 		"title": "Progressive CPU Volume Rendering with Sample Accumulation",
