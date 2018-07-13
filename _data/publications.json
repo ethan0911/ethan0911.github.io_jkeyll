@@ -178,9 +178,9 @@
 		"year": 2015,
 		"short_title": "vsa",
 		"doi": "10.1016/j.cageo.2014.10.012",
-		"bibtex": "@article{Wang_2016,\n
-			doi = {10.3390/cli4030043},\n
-			url = {https://doi.org/10.3390%2Fcli4030043},\n
+		"bibtex": "@article{Feng_2015,\n
+			doi = {10.1016/j.cageo.2014.10.012},\n
+			url = {https://doi.org/10.1016%2Fj.cageo.2014.10.012},\n
 			year = 2016,\n
 			month = {sep},\n
 			publisher = {{MDPI} {AG}},\n
@@ -190,7 +190,7 @@
 			author = {Feng Wang and Wenwen Li and Sizhe Wang},\n
 			title = {Polar Cyclone Identification from 4D Climate Data in a Knowledge-Driven Visualization System},\n
 			journal = {Climate},\n}",
-			"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
+		"abstract": "Arctic cyclone activity has a significant association with Arctic warming and Arctic ice decline. Cyclones in the North Pole are more complex and less developed than those in tropical regions. Identifying polar cyclones proves to be a task of greater complexity. To tackle this challenge, a new method which utilizes pressure level data and velocity field is proposed to improve the identification accuracy. In addition, the dynamic, simulative cyclone visualized with a 4D (four-dimensional) wind field further validated the identification result. A knowledge-driven system is eventually constructed for visualizing and analyzing an atmospheric phenomenon (cyclone) in the North Pole. The cyclone is simulated with WebGL on in a web environment using particle tracing. To achieve interactive frame rates, the graphics processing unit (GPU) is used to accelerate the process of particle advection. It is concluded with the experimental results that: (1) the cyclone identification accuracy of the proposed method is 95.6% when compared with the NCEP/NCAR (National Centers for Environmental Prediction/National Center for Atmospheric Research) reanalysis data; (2) the integrated knowledge-driven visualization system allows for streaming and rendering of millions of particles with an interactive frame rate to support knowledge discovery in the complex climate system of the Arctic region."
 	}
 ]
 
