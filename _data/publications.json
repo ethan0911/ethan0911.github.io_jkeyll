@@ -1,8 +1,7 @@
 [
 	{
-		"title": "A Virtual Reality Visualization Tool for Neuron Tracing",
-		"authors": "Will Usher, Pavol Klacansky, Frederick Federer, Peer-Timo Bremer,
-				Aaron Knoll, Jeff Yarch, Alessandra Angelucci, and Valerio Pascucci",
+		"title": "CPU Isosurface Ray Tracing of Adaptive Mesh Refinement Data",
+		"authors": "Feng Wang, Ingo Wald, Qi Wu, Will Usher and Chris R. Johnson",
 		"venue": "IEEE Transactions on Visualization and Computer Graphics",
 		"paper_pdf": "http://sci.utah.edu/~will/papers/vrnt/vr-neuron-tracing.pdf",
 		"teaser": "https://i.imgur.com/2rmTeh2.png",
@@ -42,7 +41,7 @@
 			doi={10.1109/TVCG.2017.2744079},\n
 			ISSN={1077-2626},\n
 			month={Jan},\n}",
-		"abstract": "Tracing neurons in large-scale microscopy data is crucial to establishing a wiring diagram of the brain, which is needed to understand how neural circuits in the brain process information and generate behavior. Automatic techniques often fail for large and complex datasets, and connectomics researchers may spend weeks or months manually tracing neurons using 2D image stacks. We present a design study of a new virtual reality (VR) system, developed in collaboration with trained neuroanatomists, to trace neurons in microscope scans of the visual cortex of primates. We hypothesize that using consumer-grade VR technology to interact with neurons directly in 3D will help neuroscientists better resolve complex cases and enable them to trace neurons faster and with less physical and mental strain. We discuss both the design process and technical challenges in developing an interactive system to navigate and manipulate terabyte-sized image volumes in VR. Using a number of different datasets, we demonstrate that, compared to widely used commercial software, consumer-grade VR presents a promising alternative for scientists.",
+		"abstract": "Adaptive mesh refinement (AMR) is a key technology for large-scale simulations that allows for adaptively changing the simulation mesh resolution, resulting in significant computational and storage savings. However, visualizing such AMR data poses a significant challenge due to the difficulties introduced by the hierarchical representation when reconstructing continuous field values. In this paper, we detail a comprehensive solution for interactive isosurface rendering of block-structured AMR data. We contribute a novel reconstruction strategy—the octant method—which is continuous, adaptive and simple to implement. Furthermore, we present a generally applicable hybrid implicit isosurface ray-tracing method, which provides better rendering quality and performance than the built-in sampling-based approach in OSPRay. Finally, we integrate our octant method and hybrid isosurface geometry into OSPRay as a module, providing the ability to create high-quality interactive visualizations combining volume and isosurface representations of BS-AMR data. We evaluate the rendering performance, memory consumption and quality of our method on two gigascale block-structured AMR datasets",
 		"teaser_caption": "A screenshot of our VR neuron tracing tool using the isosurface rendering mode. The dark gray floor represents the extent of the tracked space. Users can orient themselves in the dataset via the minimap (right), which shows the world extent in blue, the current focus region in orange, and the previously traced neuronal structures. The focus region is displayed in the center of the space. The 3D interaction and visualization provides an intuitive environment for exploring the data and a natural interface for neuron tracing, resulting in faster, high-quality traces with less fatigue reported by users compared to existing 2D tools."
 	},
 	{
