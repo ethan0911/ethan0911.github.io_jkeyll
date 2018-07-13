@@ -7,7 +7,7 @@
 		"teaser": "https://i.imgur.com/2rmTeh2.png",
 		"thumb": "assets/papers/thumb/tAMR.png",
 		"year": 2018,
-		"short_title": "AMR",
+		"short_title": "amr",
 		"doi": "10.1109/TVCG.2017.2744079",
 		"supplemental_video": "https://www.youtube.com/embed/lTNef_kbLKg",
 		"presentation_video": "https://www.youtube.com/embed/XzmYdl9rFs0",
@@ -96,7 +96,7 @@
 		"paper_pdf": "assets/papers/ijgi-associationRules.pdf",
 		"thumb": "assets/papers/thumb/tAssociationRules.png",
 		"year": 2018,
-		"short_title": "associationRules18",
+		"short_title": "associationrules18",
 		"doi": "10.3390/ijgi7070266",
 		"downloads": [
 			{
@@ -129,7 +129,7 @@
 		"venue": "Informatics",
 		"paper_pdf": "assets/papers/WSMV.pdf",
 		"thumb": "assets/papers/thumb/tWSMV.png",
-		"short_title": "WSMV",
+		"short_title": "wsmv",
 		"doi": "10.3390/informatics4030017",
 		"year": 2017,
 		"bibtex": "@article{Wang_2017,\n
@@ -153,7 +153,7 @@
 		"paper_pdf": "assets/papers/PolarCyclone.pdf",
 		"thumb": "assets/papers/thumb/tPolarCyclone.png",
 		"year": 2016,
-		"short_title": "polarCyclone",
+		"short_title": "polarcyclone",
 		"doi": "10.3390/cli4030043",
 		"bibtex": "@article{Wang_2016,\n
 			doi = {10.3390/cli4030043},\n
