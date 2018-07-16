@@ -10,7 +10,7 @@ layout: default
 		<h5>In <i>{{page.venue}}</i>, {{page.year}}</h5>
 		{% if page.teaser %}
 		<figure>
-			<img class="img-fluid" src="{{page.teaser}}"/>
+			<img class="img-fluid" src="../{{page.teaser}}"/>
 			<figcaption class="text-left mt-2">
 				<b>Fig. 1: </b><i>{{page.teaser_caption}}</i>
 			</figcaption>
@@ -30,7 +30,7 @@ layout: default
 		list of entries. One main supplemental video could be included though in the main page.-->
 		<dl>
 			<dt>Publication</dt>
-			<dd><a href="{{page.paper_pdf}}"><i class="far fa-file-pdf"></i> Paper (PDF)</a><dd>
+			<dd><a href="../{{page.paper_pdf}}"><i class="far fa-file-pdf"></i> Paper (PDF)</a><dd>
 			{% if page.doi %}
 			<dd><a href="https://dx.doi.org/{{page.doi}}">
 				<i class="fas fa-external-link-alt"></i> Publisher's Version</a>
