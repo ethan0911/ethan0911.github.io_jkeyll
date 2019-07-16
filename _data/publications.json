@@ -1,5 +1,41 @@
 [
 	{
+		"title": "Ray Tracing Generalized Tube Primitives: Method and Applications",
+		"authors": "Mengjiao Han, Ingo Wald, Will Usher, Qi Wu, Feng Wang, Valerio Pascucci, Charles D. Hansen, and Chris R. Johnson",
+		"venue": "Computer Graphics Forum (Proceedings of EuroVis)",
+		"paper_pdf": "assets/papers/tubes.pdf",
+		"teaser": "assets/papers/teaser/tubes-teaser.jpg",
+		"thumb": "assets/papers/thumb/tTubes.jpg",
+		"year": 2019,
+		"short_title": "tubes",
+		"doi": "10.1111/cgf.13703",
+		"bibtex": "@article{han_ray_2019,\n
+			journal = {Computer Graphics Forum},\n
+			title = {{Ray Tracing Generalized Tube Primitives: Method and Applications}},\n
+			author = {Han, Mengjiao and Wald, Ingo and Usher, Will and
+				Wu, Qi and Wang, Feng and Pascucci, Valerio and Hansen, Charles D.
+				and Johnson, Chris R.},\n
+			year = {2019},\n
+			publisher = {The Eurographics Association and John Wiley & Sons Ltd.},\n
+			ISSN = {1467-8659},\n
+			DOI = {10.1111/cgf.13703}\n}",	
+		"supplemental_video": "https://www.youtube.com/embed/RB2yC5Io3JA",
+		"abstract": "We present a general high-performance technique for ray tracing generalized tube primitives. Our technique efficiently supports tube primitives with fixed and varying radii, general acyclic graph structures with bifurcations, and correct transparency with interior surface removal. Such tube primitives are widely used in scientific visualization to represent diffusion tensor imaging tractographies, neuron morphologies, and scalar or vector fields of 3D flow. We implement our approach within the OSPRay ray tracing framework, and evaluate it on a range of interactive visualization use cases of fixed- and varying-radius streamlines, pathlines, complex neuron morphologies, and brain tractographies. Our proposed approach provides interactive, high-quality rendering, with low memory overhead.",
+		"teaser_caption": "Visualizations using our \"generalized tube\" primitives. (a): DTI tractography data, semi-transparent fixed-radius streamlines (218K line segments). (b): A generated neuron assembly test case, streamlines with varying radii and bifurcations (3.2M l. s.). (c): Aneurysm morphology, semi-transparent streamlines with varying radii and bifurcations (3.9K l. s.) and an opaque center line with fixed radius and bifurcations (3.9K l. s.). (d): A tornado simulation, with radius used to encode the velocity magnitude (3.56M l. s.). (e): Flow past a torus, fixed-radius pathlines (6.5M l. s.). Rendered at: (a) 0.38FPS, (b) 7.2FPS, (c) 0.25FPS, (d) 18.8FPS, with a 2048x2048 framebuffer; (e) 23FPS with a 2048x786 framebuffer. Performance measured on a dual Intel Xeon E5-2640 v4 workstation, with shadows and ambient occlusion.",
+		"downloads": [
+			{
+				"title": "Code",
+				"list": [
+					{
+						"title": "OSPRay Module",
+						"link": "https://github.com/MengjiaoH/ospray-module-tubes",
+						"icon": "fab fa-github"
+					}
+				]
+			}
+		]
+	},
+	{
 		"title": "CPU Isosurface Ray Tracing of Adaptive Mesh Refinement Data",
 		"authors": "Feng Wang, Ingo Wald, Qi Wu, Will Usher and Chris R. Johnson",
 		"venue": "IEEE Transactions on Visualization and Computer Graphics",
@@ -8,8 +44,28 @@
 		"thumb": "assets/papers/thumb/tAMR.png",
 		"year": 2018,
 		"short_title": "amr",
+		"supplemental_video": "https://player.vimeo.com/video/303253321",
+		"doi": "10.1109/TVCG.2018.2864850",
+		"bibtex": "@article{Wang_AMR_Iso_2019,\n
+			author={F. Wang and I. Wald and Q. Wu and W. Usher and C. R. Johnson},\n
+			journal={{IEEE} {Transactions} on {Visualization} and {Computer} {Graphics}},\n
+			title={{CPU} {Isosurface} {Ray} {Tracing} of {Adaptive} {Mesh} {Refinement} {Data}},\n
+			year={2019},\n
+			doi={10.1109/TVCG.2018.2864850},\n}",
 		"abstract": "Adaptive mesh refinement (AMR) is a key technology for large-scale simulations that allows for adaptively changing the simulation mesh resolution, resulting in significant computational and storage savings. However, visualizing such AMR data poses a significant challenge due to the difficulties introduced by the hierarchical representation when reconstructing continuous field values. In this paper, we detail a comprehensive solution for interactive isosurface rendering of block-structured AMR data. We contribute a novel reconstruction strategy—the octant method—which is continuous, adaptive and simple to implement. Furthermore, we present a generally applicable hybrid implicit isosurface ray-tracing method, which provides better rendering quality and performance than the built-in sampling-based approach in OSPRay. Finally, we integrate our octant method and hybrid isosurface geometry into OSPRay as a module, providing the ability to create high-quality interactive visualizations combining volume and isosurface representations of BS-AMR data. We evaluate the rendering performance, memory consumption and quality of our method on two gigascale block-structured AMR datasets",
-		"teaser_caption": "High-fidelity isosurface visualizations of gigascale block-structured adaptive mesh refinement (BS-AMR) data using our method. Left: a 28 GB GR-Chombo simulation of gravitational waves resulting from the collision of two black holes. Middle and Right: a 57 GB AMR dataset computed with LAVA at NASA, simulating multiple fields over the landing gear of an aircraft. Middle: isosurface representation of the vorticity, rendered with path tracing. Right: a combined visualization of volume rending and an isosurface of the pressure over the landing gear, rendered with OSPRay’s SciVis renderer. Using our approach for ray tracing such AMR data, we can interactively render crack-free implicit isosurfaces in combination with direct volume rendering and advanced shading effects like transparency, ambient occlusion and path tracing."
+		"teaser_caption": "High-fidelity isosurface visualizations of gigascale block-structured adaptive mesh refinement (BS-AMR) data using our method. Left: a 28 GB GR-Chombo simulation of gravitational waves resulting from the collision of two black holes. Middle and Right: a 57 GB AMR dataset computed with LAVA at NASA, simulating multiple fields over the landing gear of an aircraft. Middle: isosurface representation of the vorticity, rendered with path tracing. Right: a combined visualization of volume rending and an isosurface of the pressure over the landing gear, rendered with OSPRay’s SciVis renderer. Using our approach for ray tracing such AMR data, we can interactively render crack-free implicit isosurfaces in combination with direct volume rendering and advanced shading effects like transparency, ambient occlusion and path tracing.",
+	"downloads": [
+			{
+				"title": "Code",
+				"list": [
+					{
+						"title": "AMR Isosurface module for OSPRay",
+						"link": "https://github.com/ethan0911/module-impi",
+						"icon": "fab fa-github"
+					}
+				]
+			}
+		]
 	},
 	{
 		"title": "VisIt-OSPRay: Toward an Exascale Volume Visualization System",
@@ -17,7 +73,7 @@
 			Ingo Wald, Valerio Pascucci, and Charles D. Hansen",
 		"venue": "Eurographics Symposium on Parallel Graphics and Visualization",
 		"paper_pdf": "assets/papers/visit-ospray-egpgv18.pdf",
-		"teaser": "https://i.imgur.com/JgAOmst.png",
+		"teaser": "assets/papers/teaser/visIt-teaser.png",
 		"thumb": "assets/papers/thumb/tVisItOSPRay.jpg",
 		"year": 2018,
 		"short_title": "visit-ospray",
@@ -65,17 +121,6 @@
 		"year": 2018,
 		"short_title": "associationrules18",
 		"doi": "10.3390/ijgi7070266",
-		"downloads": [
-			{
-				"title": "Videos",
-				"list": [
-					{
-						"title": "Uintah UASC Coal Boiler Visualization",
-						"link": "https://youtu.be/vpJtHTzArq4"
-					}
-				]
-			}
-		],
 		"bibtex": "@article{Wang_2018,\n
 			title = {{Association} {Rules-Based} {Multivariate} {Analysis} and {Visualization} of {Spatiotemporal} {Climate} Data},\n
 			volume = {7},\n
