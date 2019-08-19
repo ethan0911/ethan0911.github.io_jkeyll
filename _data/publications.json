@@ -1,5 +1,29 @@
 [
 	{
+		"title": "Interactive Rendering of Large-Scale Volumes on Multi-Core CPUs",
+		"authors": "Feng Wang, Ingo Wald, Chris R. Johnson",
+		"venue": "IEEE Symposium on Large Data Analysis and Visualization",
+		"paper_pdf": "assets/papers/bricktree-LDAV.pdf",
+		"teaser": "assets/papers/teaser/bricktree-teaser.png",
+		"thumb": "assets/papers/thumb/tBricktree.png",
+		"year": 2019,
+		"short_title": "bricktree",
+		"abstract": "Recent advances in large-scale simulations have resulted in volume data of increasing size that stress the capabilities of off-the-shelf visualization tools. Users suffer from long data loading times because large data must be read from disk into memory prior to rendering the first frame. In this work, we present a volume renderer that enables high-fidelity interactive visualization of large volumes on multi-core CPU architectures. Compared to existing CPU-based visualization frameworks, which take minutes or hours for data loading, our renderer allows users to get a data overview in seconds. Using a hierarchical representation of raw volumes and ray-guided streaming, we reduce the data loading time dramatically and improve the user’s interactivity experience. We also examine system design choices with respect to performance and scalability. Specifically, we evaluate the hierarchy generation time, which has been ignored in most prior work, but which can become a significant bottleneck as data scales. Finally, we create a module on top of the OSPRay raytracing framework that is ready to be integrated into general-purpose visualization frameworks such as Paraview.",
+		"teaser_caption": "Screenshots from our high-fidelity interactive volume visualization renderer. Top left: volume rendering of a 5123 magnetic reconnection dataset [15]. Top middle: volume rendering of the 2048 x 2048 x 1920 Richtmyer-Meshkov instability (RMI) [6]. Top right: visualization of a 2048 x 2048 x 2612 cardiac volume [22]. Bottom: visualization of the 10240 x 7680 x 1356 DNS dataset [31]. All images are rendered with surface shading.",
+		"downloads": [
+			{
+				"title": "Code",
+				"list": [
+					{
+						"title": "OSPRay Module",
+						"link": "https://gitlab.com/ethan0911/ospray-module-bricktree.git",
+						"icon": "fab fa-github"
+					}
+				]
+			}
+		]
+	},
+	{
 		"title": "Ray Tracing Generalized Tube Primitives: Method and Applications",
 		"authors": "Mengjiao Han, Ingo Wald, Will Usher, Qi Wu, Feng Wang, Valerio Pascucci, Charles D. Hansen, and Chris R. Johnson",
 		"venue": "Computer Graphics Forum (Proceedings of EuroVis)",
